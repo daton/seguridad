@@ -17,7 +17,7 @@ UserDetailsService userDetailsService;
    // @CrossOrigin(origins = { "http://localhost:4200" }, allowCredentials = "true")
     @GetMapping("/")
     public Estatus hola(){
-        System.out.println("se lelvo a cabo la autenticacion");
+        System.out.println("se lelvo a cabo la autenticasasasasacion");
 
         System.out.println("estatusito "+ SecurityContextHolder.getContext().getAuthentication().getPrincipal());
       Estatus estatus=new Estatus();
