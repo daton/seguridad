@@ -159,5 +159,101 @@ La mayoría de los sitios web actuales cuentan ya con certificado de seguridad c
     }
     
     
+    
+  
      
    
+   
+   En este clase configuramos dos roles, uno de **USER** y el otro de **ADMIN**, estos métodos los configuramos 
+   en  el método *userDetailService*, los roles son generados con la técnica *InMemory* para evitar generar un acceso a una base de datos
+   ya sea relacional o no-relacional. En el reglon 26 y 27 se generan ambos roles.
+   
+   Entre las ventajas que nos brinda éste framework es que nos ofrece una librería para  llevar a cabo
+    un **password encoder** de defecto, una vez que hallamos creado el manager en memoria.
+    Al ejecutar la aplicacion puedes autenticarte con el rol de usuario, el cual es *unitec* y su password *unitec2019*
+    
+    
+  El siguiente paso es generar una clase controladora, la cual fungirá como servicio  *REST* de acceso, 
+  para ello en la misma  carpeta de JAVA vas a genera las clases *ControladorHola* y la clase *Estatus*, ésta ultima simplemente 
+  tiene la tarea de generar una respuesta en formato *json* una vez que se acceda con seguridad el servicio.
+  
+  Clase *ControladorHola*.
+  
+  ```
+  
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@CrossOrigin
+@RequestMapping("/")
+public class ControladorHola {
+@Autowired
+UserDetailsService userDetailsService;
+   @CrossOrigin(origins = { "http://localhost:4200", "http://localhost:8095" }, allowCredentials = "true")
+    @GetMapping("/")
+    public Estatus hola(){
+        System.out.println("se lelvo a cabo la autenticasasasasacion");
+
+        System.out.println("estatusito "+ SecurityContextHolder.getContext().getAuthentication().getPrincipal());
+      Estatus estatus=new Estatus();
+      estatus.setSuccess(true);
+
+
+      estatus.setMensaje("Auntenticando con  CORS!!");
+        return estatus;
+    }
+
+
+    @GetMapping("/borrego")
+    public Estatus borrego(){
+        System.out.println("Llego borreo");
+        Estatus estatus=new Estatus();
+        estatus.setMensaje("Haz accedido con seguridad al servicio REST desde las URL permitidas");
+        return estatus;
+    }
+}
+
+  ```
+  Clase *Estatus*
+  
+  ```
+  
+public class Estatus {
+
+    boolean success;
+    String mensaje;
+
+
+
+
+    public String getMensaje() {
+        return mensaje;
+    }
+
+    public void setMensaje(String mensaje) {
+        this.mensaje = mensaje;
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+}
+
+  ```
+ 
+  En el siguiente video se muestran los pasos anteriores.
+  
+    **DA CLICK EN LA SIGUIENTE IMÁGEN PARA VER EL VIDEO**
+   [![Ver Video](.README_images/b02fb363.png)](https://sierra-guadalupe.org/primero-seguridad.mp4)
+    
+    

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ControladorHola {
 @Autowired
 UserDetailsService userDetailsService;
-   @CrossOrigin(origins = { "http://localhost:4200" }, allowCredentials = "true")
+   @CrossOrigin(origins = { "http://localhost:4200", "http://localhost:8095" }, allowCredentials = "true")
     @GetMapping("/")
     public Estatus hola(){
         System.out.println("se lelvo a cabo la autenticasasasasacion");
@@ -24,7 +24,7 @@ UserDetailsService userDetailsService;
       estatus.setSuccess(true);
 
 
-      estatus.setMensaje("auntenticando con corsito");
+      estatus.setMensaje("Auntenticando con  CORS!!");
         return estatus;
     }
 
@@ -33,7 +33,7 @@ UserDetailsService userDetailsService;
     public Estatus borrego(){
         System.out.println("Llego borreo");
         Estatus estatus=new Estatus();
-        estatus.setMensaje("jajajaja");
+        estatus.setMensaje("Haz accedido con seguridad al servicio REST desde las URL permitidas");
         return estatus;
     }
 }
