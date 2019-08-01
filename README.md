@@ -58,3 +58,9 @@ La mayoría de los sitios web actuales cuentan ya con certificado de seguridad c
   
   En la siguiente imagen se muestra la pantalla de acceso de dicha herramienta
   ![](.README_images/d447f02d.png)
+  
+  Todo el proyecto terminado se puede descargar de este repositorio, es necesario que tengas instalado el IDE IntellijIDEA y la versión 10 de la JDK de JAVA.
+  En el siguiente video se muestra  cómo generar el proyecto con als dependencias necesarias de seguridad  que vamos a utilizar.
+  
+  
+  
