@@ -62,9 +62,23 @@ La mayoría de los sitios web actuales cuentan ya con certificado de seguridad c
   Todo el proyecto terminado se puede descargar de este repositorio, es necesario que tengas instalado el IDE IntellijIDEA y la versión 10 de la JDK de JAVA.
   En el siguiente video se muestra  cómo generar el proyecto con als dependencias necesarias de seguridad  que vamos a utilizar.
   
+  
   **DA CLICK EN LA SIGUIENTE IMÁGEN PARA VER EL VIDEO**
   
   [![Ver Video](.README_images/b02fb363.png)](http://sierra-guadalupe.org/salud-unitec.mp4)
   
   
-  
+  En el video anterior  te indicamos cómo configurar, descargar y ejecutar el proyecto para implementar la seguridad web, 
+     en el mismo al final se debe de mostar en el puerto 8095 un formulario de login, lo cual indica que configuraste bien el proyecto
+   
+   Se  debe de mostrar como en la siguiente figura:
+   ![](.README_images/af1ce404.png)
+   
+   Una vez realizado lo anterior vamos a preoceder a generar un servicio web del estilo REST, para poder ser accesado por un cliente  externo, el cual
+   puede ser el navegador web o bien un cliente inteligente (smart phone).
+   
+   Primero vamos a generar una clase que se llame  **WebSecurityConfig**, la genera en la carpeta java, la cual se encuetra en la carpeta **main** de tu 
+    proyecto, y en ella vas a copiar el siguiente código
+    
+     
+   
