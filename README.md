@@ -80,7 +80,7 @@ La mayoría de los sitios web actuales cuentan ya con certificado de seguridad c
    Primero vamos a generar una clase que se llame  **WebSecurityConfig**, la genera en la carpeta java, la cual se encuetra en la carpeta **main** de tu 
     proyecto, y en ella vas a copiar el siguiente código
     
-    ```
+    
     import org.springframework.context.annotation.Bean;
     import org.springframework.security.config.annotation.web.builders.HttpSecurity;
     import org.springframework.security.config.annotation.web.builders.WebSecurity;
@@ -157,7 +157,7 @@ La mayoría de los sitios web actuales cuentan ya con certificado de seguridad c
         }
     
     }
-    ```
+    
     
      
    
