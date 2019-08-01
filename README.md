@@ -65,7 +65,7 @@ La mayoría de los sitios web actuales cuentan ya con certificado de seguridad c
   
   **DA CLICK EN LA SIGUIENTE IMÁGEN PARA VER EL VIDEO**
   
-  [![Ver Video](.README_images/b02fb363.png)](http://sierra-guadalupe.org/salud-unitec.mp4)
+  [![Ver Video](.README_images/b02fb363.png)](http://sierra-guadalupe.org/primero-seguridad.mp4)
   
   
   En el video anterior  te indicamos cómo configurar, descargar y ejecutar el proyecto para implementar la seguridad web, 
