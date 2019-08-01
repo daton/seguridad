@@ -1,4 +1,10 @@
 # Seguridad Web : Autenticación y Control de acceso
+
+## El proyecto completo de este tutorial se encuentra en este mismo repositorio ya terminado
+ Puedes clonar  este proyecto desde este repositorio.
+ 
+ 
+ ### Consideraciones iniciales
 La mayoría de los sitios web actuales cuentan ya con certificado de seguridad conocido como 
  SSL,  *Secure Socket Layer* por sus siglas en inglés<br><br>
  Sin embargo, la seguridad de un sitio web va más allá de eso y como veremos, la mayoría de los
@@ -37,6 +43,7 @@ La mayoría de los sitios web actuales cuentan ya con certificado de seguridad c
    llevara cabo acciones mal intencionadas usando sus privilegios y el contexto que 
    poseen dentro de la aplicación<br><br>
   
+  ### Desarrollo
   Con estos datos nos damos cuenta que los "huecos" de seguridad  de las aplicacionesa web 
   están más marcados en lo que es el *Cross-site request forgery* y *Cross-site scripting*, en este tutorial 
   nos dedicaremos a mostrar dicha vulnerabilidad asi como desarrollar una apliación para 
