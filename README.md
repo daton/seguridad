@@ -254,6 +254,8 @@ public class Estatus {
   En el siguiente video se muestran los pasos anteriores.
   
     **DA CLICK EN LA SIGUIENTE IMÁGEN PARA VER EL VIDEO**
-   [![Ver Video](.README_images/b02fb363.png)](https://sierra-guadalupe.org/primero-seguridad.mp4)
+   [![Ver Video](.README_images/b02fb363.png)](https://sierra-guadalupe.org/segundo-seguridad.mp4)
     
     
+Al final usamos el servicio REST, para ello ingresa en el formulario el login y el password  del usuario unitec, 
+vas a obtener como respuesta un objeto *json* con el estatus de autenticado con *CORS*.
