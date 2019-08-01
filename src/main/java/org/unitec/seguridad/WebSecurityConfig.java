@@ -23,11 +23,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
 
         User.UserBuilder userBuilder = User.withDefaultPasswordEncoder();
-        UserDetails rob = userBuilder.username("rob").password("rob").roles("USER").build();
-        UserDetails admin = userBuilder.username("admin").password("admin").roles("USER","ADMIN").build();
+        UserDetails alumno = userBuilder.username("unitec").password("unitec2019").roles("USER").build();
+        UserDetails admin = userBuilder.username("admin").password("admin2019").roles("USER","ADMIN").build();
 
        manager.createUser(User.withDefaultPasswordEncoder().username("user").password("password").roles("USER").build());
-        manager.createUser(rob);
+        manager.createUser(alumno);
         manager.createUser(admin);
         return manager;
     }
@@ -41,7 +41,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
-
+/*
+ con estas línea establecemos el acceso  de clientes remotos a la aplicación: Cross Site Request Forgery
+ */
     protected void configure(HttpSecurity http) throws Exception {
         http
 
@@ -52,8 +54,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and().httpBasic().and().csrf().disable();
 
-             //   .formLogin();
-        http.cors(); //Este es para que acepte los origenes cruzados en la autenticación
+
+        http.cors();
     }
 
     @Bean
@@ -65,7 +67,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 
         configuration.setAllowCredentials(true);
-        // setAllowedHeaders este es importantisimo sion el se lanza el eeror 403 de origenes no permitidos
+        // setAllowedHeaders este es importantisimo si no se hace el se lanza el error 403 de orígenes no permitidos
         //
         configuration.setAllowedHeaders(Arrays.asList("Authorization", "Cache-Control", "Content-Type"));
         final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
