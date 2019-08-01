@@ -48,3 +48,13 @@ La mayoría de los sitios web actuales cuentan ya con certificado de seguridad c
   El ambiente de desarrollo se puede descargar del siguiente sitio [En su version comunitaria](https://www.jetbrains.com/idea/download/#section=linux)
   
   ![](.README_images/8564e5ff.png)
+  
+  Vamos a usar una herramienta de nube que recomienda *Spring Boot* para generar la plantilla de nuestro proyecto.
+  El objetivo es mostrar las vulnerabilidades y equipar con la información necesaria una aplicación web en donde
+  se requiera elaborar un proyecto web  que necesite proveer de servicios web.
+  
+  En el siguiente sitio se puede [generar y descargar la plantilla de la aplicacion](https://start.spring.io/).  Vamos a usar
+  la herramienta de nueva para obtener las dependencias del proyecto, así como las librerías necesarias para llevar a cabo todo el ejercicio
+  
+  En la siguiente imagen se muestra la pantalla de acceso de dicha herramienta
+  ![](.README_images/d447f02d.png)
