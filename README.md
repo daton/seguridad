@@ -41,3 +41,10 @@ La mayoría de los sitios web actuales cuentan ya con certificado de seguridad c
   están más marcados en lo que es el *Cross-site request forgery* y *Cross-site scripting*, en este tutorial 
   nos dedicaremos a mostrar dicha vulnerabilidad asi como desarrollar una apliación para 
   prevenir dicho ataque.
+  
+  Como plataforma de desarrollo vamos a usar JAVA , junto con la tecnología *Spring-Boot* y el ambiente de desarrollo
+  IntellijIDEA es su versión comunitaria.
+  
+  El ambiente de desarrollo se puede descargar del siguiente sitio [En su version comunitaria](https://www.jetbrains.com/idea/download/#section=linux)
+  
+  ![](.README_images/8564e5ff.png)
