@@ -62,7 +62,7 @@ La mayoría de los sitios web actuales cuentan ya con certificado de seguridad c
   Todo el proyecto terminado se puede descargar de este repositorio, es necesario que tengas instalado el IDE IntellijIDEA y la versión 10 de la JDK de JAVA.
   En el siguiente video se muestra  cómo generar el proyecto con als dependencias necesarias de seguridad  que vamos a utilizar.
   
-  ![](.README_images/b02fb363.png)(http://sierra-guadalupe.org/salud-unitec.mp4)
+  [![Ver Video](.README_images/b02fb363.png)](http://sierra-guadalupe.org/salud-unitec.mp4)
   
   
   
